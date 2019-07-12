@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -66,9 +66,51 @@ p {
     line-height: 1.4;
 }
 
+/*Post-Reset Sytles */
+
+h1{
+	font-size: 24px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+
+header{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin: 30px 0px 40px 0px;
+
+}
+
+header nav{
+	flex-grow: 2;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+
+header nav a{
+	text-decoration: none;
+	color: black;
+}
+
+header nav a:hover{
+	color: red;
+}
+
+
 .container {
     width: 800px;
     margin: 0 auto;
+}
+
+.header-img{
+	margin: 0px 0px 30px 0px;
+	width: 100%;
+	max-height: 153px;
+	object-fit: cover;
 }
 
 .top-content {
@@ -82,7 +124,45 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
+}
+
+.top-content .full-text-container{
+	padding: 0 1%;
+	padding-bottom: 20px;
+}
+
+.services{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.service-card{
+	display: flex;
+	flex-flow: column nowrap;
+	width: 48%;
+	padding: 0px 0px 20px 0px;
+	margin: 10px 1% 30px;
+	border-bottom: 1px dashed black;
+}
+
+.service-card h2{
+	margin-top: 10px;
+}
+
+.service-card button{
+	width: 40%;
+	font-size: 16px;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 2% 5%;
+	margin: 20px 0 0 0;
+	transition: transform 0.5s;
+}
+
+.service-card button:hover{
+	transform: scale(1.1);
 }
 
 .middle-content {
@@ -112,10 +192,54 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box:nth-child(1){
+	background-color: teal;
+}
+
+.middle-content .boxes .box:nth-child(2){
+	background-color: gold;
+}
+
+.middle-content .boxes .box:nth-child(3){
+	background-color: cadetblue;
+}
+
+.middle-content .boxes .box:nth-child(4){
+	background-color: coral;
+}
+
+.middle-content .boxes .box:nth-child(5){
+	background-color: crimson;
+}
+
+.middle-content .boxes .box:nth-child(6){
+	background-color: forestgreen;
+}
+
+.middle-content .boxes .box:nth-child(7){
+	background-color: darkorchid;
+}
+
+.middle-content .boxes .box:nth-child(8){
+	background-color: hotpink;
+}
+
+.middle-content .boxes .box:nth-child(9){
+	background-color: indigo;
+}
+
+.middle-content .boxes .box:nth-child(10){
+	background-color: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
     justify-content: space-around;
+}
+
+.wrap{
+	flex-flow: row wrap;
 }
 
 .bottom-content .text-container {
@@ -124,6 +248,73 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.cta-text{
+	padding: 20px 2% 40px;
+}
+
+.team-member{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+	padding: 2%;
+	margin: 1%;
+	border-bottom: 1px black dashed;
+}
+
+.team-img{
+	width: 200px;
+}
+
+.team-img img{
+
+	width: 100%;
+	object-fit: cover;
+}
+
+.contact-us{
+	width: 60%;
+	margin: 0 auto;
+	border-bottom: 1px black dashed;
+	padding: 2% 5%;
+	margin-bottom: 35px;
+}
+
+.contact-form{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.form-group{
+	width: 100%;
+}
+
+.form-control{
+	width: 100%;
+	background-color: white;
+	border-style: solid;
+	border: 1px solid grey;
+	padding: 5px 0px 5px 2px;
+	margin: 5px 0px 10px 0px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px 3px #f2f2f2;
+}
+
+input[type="submit"]{
+	align-self: center;
+	width: 50%;
+	background-color: black;
+	border: none;
+	color: white;
+	height: 40px;
+	transition: transform 0.4s;
+}
+
+input[type="submit"]:hover{
+	transform: scale(1.2);
 }
 
 footer {
@@ -143,4 +334,12 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 900px){
+	.service-card{
+		width: 60%;
+		align-items: center;
+		text-align: center;
+	}
 }
