@@ -118,6 +118,46 @@ header nav a:hover{
     padding-bottom: 20px;
 }
 
+.top-content .full-text-container{
+	padding: 0 1%;
+	padding-bottom: 20px;
+}
+
+.services{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.service-card{
+	width: 48%;
+	padding: 0px 0px 20px 0px;
+	margin: 10px 1% 30px;
+	border-bottom: 1px dashed black;
+}
+
+.service-card h2{
+	margin-top: 10px;
+}
+
+.service-card button{
+	font-size: 16px;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 2% 5%;
+	margin: 20px 0 0 0;
+	transition: transform 0.5s;
+}
+
+.service-card button:hover{
+	font-size: 16px;
+	border: 2px solid black;
+	border-radius: 10px;
+	padding: 2% 5%;
+	margin: 20px 0 0 0;
+	transform: scale(1.1);
+}
+
 .middle-content {
     margin-bottom: 20px;
     border-bottom: 1px dashed black;
