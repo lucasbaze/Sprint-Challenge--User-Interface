@@ -68,6 +68,12 @@ p {
 
 /*Post-Reset Sytles */
 
+h1{
+	font-size: 24px;
+	font-weight: 900;
+	margin-bottom: 10px;
+}
+
 header{
 	width: 100%;
 	display: flex;
@@ -102,6 +108,9 @@ header nav a:hover{
 
 .header-img{
 	margin: 0px 0px 30px 0px;
+	width: 100%;
+	max-height: 153px;
+	object-fit: cover;
 }
 
 .top-content {
@@ -130,6 +139,8 @@ header nav a:hover{
 }
 
 .service-card{
+	display: flex;
+	flex-flow: column nowrap;
 	width: 48%;
 	padding: 0px 0px 20px 0px;
 	margin: 10px 1% 30px;
@@ -141,6 +152,7 @@ header nav a:hover{
 }
 
 .service-card button{
+	width: 40%;
 	font-size: 16px;
 	border: 2px solid black;
 	border-radius: 10px;
@@ -150,11 +162,6 @@ header nav a:hover{
 }
 
 .service-card button:hover{
-	font-size: 16px;
-	border: 2px solid black;
-	border-radius: 10px;
-	padding: 2% 5%;
-	margin: 20px 0 0 0;
 	transform: scale(1.1);
 }
 
@@ -231,6 +238,10 @@ header nav a:hover{
     justify-content: space-around;
 }
 
+.wrap{
+	flex-flow: row wrap;
+}
+
 .bottom-content .text-container {
     padding-right: 4%;
 }
@@ -241,6 +252,69 @@ header nav a:hover{
 
 .cta-text{
 	padding: 20px 2% 40px;
+}
+
+.team-member{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+	padding: 2%;
+	margin: 1%;
+	border-bottom: 1px black dashed;
+}
+
+.team-img{
+	width: 200px;
+}
+
+.team-img img{
+
+	width: 100%;
+	object-fit: cover;
+}
+
+.contact-us{
+	width: 60%;
+	margin: 0 auto;
+	border-bottom: 1px black dashed;
+	padding: 2% 5%;
+	margin-bottom: 35px;
+}
+
+.contact-form{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.form-group{
+	width: 100%;
+}
+
+.form-control{
+	width: 100%;
+	background-color: white;
+	border-style: solid;
+	border: 1px solid grey;
+	padding: 5px 0px 5px 2px;
+	margin: 5px 0px 10px 0px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px 3px #f2f2f2;
+}
+
+input[type="submit"]{
+	align-self: center;
+	width: 50%;
+	background-color: black;
+	border: none;
+	color: white;
+	height: 40px;
+	transition: transform 0.4s;
+}
+
+input[type="submit"]:hover{
+	transform: scale(1.2);
 }
 
 footer {
@@ -260,4 +334,12 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+@media screen and (max-width: 900px){
+	.service-card{
+		width: 60%;
+		align-items: center;
+		text-align: center;
+	}
 }
