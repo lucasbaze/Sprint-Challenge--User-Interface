@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
 
+**A:** Semantic HTML is like saying "Take a left at the grocery store and then a right at the gas station", while Presentation mark up is like saying "Take a left at the 3rd street and a right at the 4th street". It's a more colloquial and helps with readability.
+
 2. Name two big differences between ```display: block;``` and ```display: inline;```.
+
+**A:** Display: Block has a height and width property, obey the the box model, and start on new lines when together within the DOM. They behave like you would imagine lego blocks to behave if connecting them together. Display: Inline does not accept height and width properties and as the name suggests, displays items "inline" with other elements.
 
 3. What are the 4 areas of the box model?
 
+**A:** Margin, Border, Padding, Content
+
 4. While using flexbox, what axis does the following property work on: ```align-items: center```?
 
+**A:** Align-items always move perpendicular to the main axis. The main axis is set by flex-direction and by default is "row", which means, but default align-items moves items "up" and "down" within the parent container.
+
 5. Explain why git is valuable to a team of developers.
+
+**A:** Git for developers is like a paint brush to a painter, coffee beans to a barista, or Adrian to Rocky.  Git is version control system that utilizes the idea of "commits" (like blocks on the blockchain) to keep track of changes that are made to a code base. Each commit is a snapshot of code that a developer is working on. This gives a team the flexibility to take snapshots of their work, borrow and build on other developers snapshots, make adjustments, and then compare the old code and new code and combine them to iteratively make progress on a project. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -52,13 +62,13 @@ You are expected to be able to answer all these questions. Your responses contri
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 
 ## Minimum Viable Product

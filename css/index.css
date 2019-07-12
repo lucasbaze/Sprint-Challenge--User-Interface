@@ -239,6 +239,10 @@ header nav a:hover{
     padding-right: 0;
 }
 
+.cta-text{
+	padding: 20px 2% 40px;
+}
+
 footer {
     width: 100%;
     background: black;
